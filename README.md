@@ -34,4 +34,5 @@ the following code in the R console:
 install.packages("devtools") # Install devtools
 library(devtools) # Loads devtools
 install_git("https://codeberg.org/mackan/ricethemes") # Install theme
+library(ricethemes) # Loads theme
 ```
