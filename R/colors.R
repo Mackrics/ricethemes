@@ -1,5 +1,6 @@
 #### Catppuccin ####
-catppuccin <- data.frame(flamingo 	= "#F2CDCD",
+catppuccin <- data.frame(
+						 flamingo 	= "#F2CDCD",
 						 mauve 		= "#DDB6F2",
 						 pink 		= "#F5C2E7",
 						 maroon 	= "#E8A2AF",
@@ -23,7 +24,8 @@ catppuccin <- data.frame(flamingo 	= "#F2CDCD",
 						 rosewater	= "#F5E0DC")
 
 #### Nord ####
-nord <- data.frame(nord0 = "#2e3440",
+nord <- data.frame(
+				   nord0 = "#2e3440",
 				   nord1 = "#3b4252",
 				   nord3 = "#434c5e",
 				   nord4 = "#4c566a",
@@ -35,9 +37,3 @@ nord <- data.frame(nord0 = "#2e3440",
 				   nord10 = "#81a1c1",
 				   nord11 = "#5e81ac")
 
-#### example ####
-library(ggplot2)
-
-ggplot(cars) +
-	aes(speed, dist) +
-	geom_point(color = nord$nord0)
