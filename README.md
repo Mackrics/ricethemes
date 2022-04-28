@@ -1,4 +1,4 @@
-#  GGplot themes
+# ricethemes
 
 A collection of themes for ggplot. The palettes currently being implemented are
 [Nord](https://www.nordtheme.com/) and
@@ -11,4 +11,4 @@ A collection of themes for ggplot. The palettes currently being implemented are
 - [ ] Light Nord theme
 - [ ] Dark Nord theme
 - [ ] Light Catppuccin theme
-- [ ] Light Catppuccin theme
+- [ ] Dark Catppuccin theme
