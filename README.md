@@ -18,3 +18,5 @@ implements two popular themes from the desktop ricing community:
 - [x] Dark Catppuccin theme
 - [ ] Light Nord theme
 - [ ] Dark Nord theme
+- [ ] Installation
+- [ ] Installation guide

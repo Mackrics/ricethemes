@@ -3,8 +3,7 @@ Type: Package
 Title: Rice Theme
 Version: 0.1.0
 Author: Mackan
-Maintainer: Markus@Ljungqvist.com
 Description: Implementation of the Nord and Catppuccin themes for ggplot
-License: What license is it under?
+License: use_mit_license()
 Encoding: UTF-8
 LazyData: true
