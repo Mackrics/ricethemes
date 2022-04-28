@@ -16,7 +16,22 @@ implements two popular themes from the desktop ricing community:
 - [x] Dataframe for Catppuccin colors
 - [x] Light Catppuccin theme
 - [x] Dark Catppuccin theme
+- [x] Installable From R
+- [x] Installation guide
 - [ ] Light Nord theme
 - [ ] Dark Nord theme
-- [ ] Installation
-- [ ] Installation guide
+- [ ] Man pages
+- [ ] Pictures of theme
+
+# Installation
+
+You can install this package from R. First, you need to install the devtools
+package from CRAN, if you have not already. This package provides utilities
+to install various packages from git. In order to install this theme, run
+the following code in the R console:
+
+```R
+install.packages("devtools") # Install devtools
+library(devtools) # Loads devtools
+install_git("https://codeberg.org/mackan/ricethemes") # Install theme
+```
