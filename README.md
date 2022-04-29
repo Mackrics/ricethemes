@@ -18,8 +18,8 @@ implements two popular themes from the desktop ricing community:
 - [x] Dark Catppuccin theme
 - [x] Installable From R
 - [x] Installation guide
-- [ ] Light Nord theme
-- [ ] Dark Nord theme
+- [x] Light Nord theme
+- [x] Dark Nord theme
 - [ ] Man pages
 - [ ] Pictures of theme
 
