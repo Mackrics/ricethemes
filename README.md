@@ -1,14 +1,17 @@
 # ricethemes
 
-The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in
-car tuning communities. Basically, it is a cosmetic upgrade, which have no 
-implications on performance. It is also a term widely used in desktop
-customization. 
+**NOTE:** This theme is still very much a work in progress. But please feel
+download it and let me know how it works!
 
-This ggplot theme is inspired by the desktop customization enthusiasts and
-implements two popular themes from the desktop ricing community:
-[Nord](https://www.nordtheme.com/) and
-[Catppuccin](https://github.com/catppuccin/catppuccin).
+The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in
+car tuning communities. Basically, it is a cosmetic upgrade, which have no
+implications on performance. It is also a term widely used in desktop
+customization. This ggplot theme is inspired by the desktop customization
+enthusiasts and implements two popular themes from the desktop ricing
+community: [Nord](https://www.nordtheme.com/) and
+[Catppuccin](https://github.com/catppuccin/catppuccin). Although they will make
+your plots look a little bit nicer, I can not guarantee a performance
+improvement.
 
 # Features
 
