@@ -39,3 +39,22 @@ library(devtools) # Loads devtools
 install_git("https://codeberg.org/mackan/ricethemes") # Install theme
 library(ricethemes) # Loads theme
 ```
+
+# Usage
+
+If you want to view the available theme colors, simply type `nord` in the
+console to view the Nord colors or type `catppuccin` to view the Catppuccin
+theme colors.
+
+There is currently four themes available, `catppuccin_light`, `catppuccin_dark`
+`nord_light` and `nord_dark`. Example use with ggplot:
+
+```R
+library(ggplot2)
+library(ricethemes)
+
+ggplot(cars) +
+  aes(dist, speed) +
+  geom_point(color = catppuccin$yellow) +
+  catppuccin_dark()
+```
