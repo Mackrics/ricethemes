@@ -1,7 +1,6 @@
 # ricethemes
 
-**NOTE:** This theme is still very much a work in progress. But please feel
-download it and let me know how it works!
+**NOTE:** *This theme is still very much a work in progress.*
 
 The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in
 car tuning communities. Basically, it is a cosmetic upgrade, which have no
