@@ -22,19 +22,19 @@ improvement.
 - [x] Installation guide
 - [x] Light Nord theme
 - [x] Dark Nord theme
-- [ ] Man pages
+- [x] Man pages
 - [ ] Pictures of theme
 
 # Installation
 
-You can install this package from R. First, you need to install the devtools
+You can install this package from R. First, you need to install the remotes
 package from CRAN, if you have not already. This package provides utilities
 to install various packages from git. In order to install this theme, run
 the following code in the R console:
 
 ```R
-install.packages("devtools") # Install devtools
-library(devtools) # Loads devtools
+install.packages("remotes") # Install remotes
+library(remotes) # Loads remotes
 install_git("https://codeberg.org/mackan/ricethemes") # Install theme
 library(ricethemes) # Loads theme
 ```
