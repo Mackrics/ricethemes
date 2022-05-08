@@ -4,10 +4,6 @@
 \usage{
     catppuccin_dark()
 }
-\arguments{
-}
-\value{
-}
 \description{
 	Rice ggplot!
 }
