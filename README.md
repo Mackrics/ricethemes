@@ -23,6 +23,7 @@ improvement.
 - [x] Light Nord theme
 - [x] Dark Nord theme
 - [x] Man pages
+- [x] New Catppuccin themes
 - [ ] Pictures of theme
 
 # Installation
@@ -41,19 +42,31 @@ library(ricethemes) # Loads theme
 
 # Usage
 
-If you want to view the available theme colors, simply type `nord` in the
-console to view the Nord colors or type `catppuccin` to view the Catppuccin
-theme colors.
+Currently available palettes (type these in console to view):
+- nord
+- catppuccin_old
+- catppuccin_mocha
+- catppuccin_macchiato
+- catppuccin_frappe
+- catppuccin_latte
 
-There is currently four themes available, `catppuccin_light`, `catppuccin_dark`
-`nord_light` and `nord_dark`. Example use with ggplot:
+Currently available themes:
+- nord_light
+- nord_dark
+- catppuccin_old_theme
+- catppuccin_mocha_theme
+- catppuccin_macchiato_theme
+- catppuccin_latte_theme
+- catppuccin_latte_theme
 
+
+Example usage:
 ```R
 library(ggplot2)
 library(ricethemes)
 
 ggplot(cars) +
   aes(dist, speed) +
-  geom_point(color = catppuccin$yellow) +
-  catppuccin_dark()
+  geom_point(color = catppuccin_mocha$Yellow) +
+  catppuccin_mocha_theme()
 ```
