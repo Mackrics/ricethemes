@@ -34,8 +34,8 @@ to install various packages from git. In order to install this theme, run
 the following code in the R console:
 
 ```R
-install.packages("remotes") # Install remotes
-library(remotes) # Loads remotes
+# Load and install remotes, if needed
+if (!require("remotes")) install.packages("remotes"); library(remotes)
 install_git("https://codeberg.org/mackan/ricethemes") # Install theme
 library(ricethemes) # Loads theme
 ```
