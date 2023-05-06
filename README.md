@@ -36,7 +36,7 @@ the following code in the R console:
 ```R
 # Load and install remotes, if needed
 if (!require("remotes")) install.packages("remotes"); library(remotes)
-install_git("https://codeberg.org/mackan/ricethemes") # Install theme
+install_git("https://github.com/mackrics/ricethemes") # Install theme
 library(ricethemes) # Loads theme
 ```
 
