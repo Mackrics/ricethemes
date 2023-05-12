@@ -12,19 +12,14 @@ community: [Nord](https://www.nordtheme.com/) and
 your plots look a little bit nicer, I can not guarantee a performance
 improvement.
 
-# Features
-
-- [x] Dataframe for Nord colors
-- [x] Dataframe for Catppuccin colors
-- [x] Light Catppuccin theme
-- [x] Dark Catppuccin theme
-- [x] Installable From R
-- [x] Installation guide
-- [x] Light Nord theme
-- [x] Dark Nord theme
-- [x] Man pages
-- [x] New Catppuccin themes
-- [ ] Pictures of theme
+# TODO
+- [ ] refactor themes into separate files (and rename them)
+  + [ ] `ctp_mocha`
+  + [ ] `ctp_macchiato`
+  + [ ] `ctp_frappe`
+  + [ ] `ctp_latte`
+  + [ ] `nord_dark`
+  + [ ] `nord_light`
 
 # Installation
 
@@ -35,38 +30,22 @@ the following code in the R console:
 
 ```R
 # Load and install remotes, if needed
-if (!require("remotes")) install.packages("remotes"); library(remotes)
-install_git("https://github.com/mackrics/ricethemes") # Install theme
-library(ricethemes) # Loads theme
+if (!require("pak")) install.packages("pak"); library(pak)
+pkg_install("mackrics/ricethemes") # Install theme
 ```
 
-# Usage
+# Usage 
 
-Currently available palettes (type these in console to view):
-- nord
-- catppuccin_old
-- catppuccin_mocha
-- catppuccin_macchiato
-- catppuccin_frappe
-- catppuccin_latte
+This is a placeholder which will describe the themes (themes, scales, palettes)
 
-Currently available themes:
-- nord_light
-- nord_dark
-- catppuccin_old_theme
-- catppuccin_mocha_theme
-- catppuccin_macchiato_theme
-- catppuccin_latte_theme
-- catppuccin_latte_theme
+# Example usage:
 
-
-Example usage:
 ```R
 library(ggplot2)
 library(ricethemes)
 
 ggplot(cars) +
   aes(dist, speed) +
-  geom_point(color = catppuccin_mocha$Yellow) +
-  catppuccin_mocha_theme()
+  geom_point(color = ctp_mocha$yellow) +
+  theme_ctp_mocha()
 ```
