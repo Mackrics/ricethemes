@@ -26,8 +26,7 @@ improvement.
 You can install this package using the [pak package](https://pak.r-lib.org/):
 
 ```R
-# Load and install remotes, if needed
-if (!require("pak")) install.packages("pak"); library(pak)
+if (!require("pak")) install.packages("pak"); library(pak) # install pak if needed and load it
 pkg_install("mackrics/ricethemes") # Install theme
 ```
 
