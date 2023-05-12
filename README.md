@@ -14,7 +14,7 @@ improvement.
 
 # TODO
 - [ ] refactor themes into separate files (and rename them)
-  + [ ] `ctp_mocha`
+  + [x] `ctp_mocha`
   + [ ] `ctp_macchiato`
   + [ ] `ctp_frappe`
   + [ ] `ctp_latte`
@@ -23,10 +23,7 @@ improvement.
 
 # Installation
 
-You can install this package from R. First, you need to install the remotes
-package from CRAN, if you have not already. This package provides utilities
-to install various packages from git. In order to install this theme, run
-the following code in the R console:
+You can install this package using the [pak package](https://pak.r-lib.org/):
 
 ```R
 # Load and install remotes, if needed
