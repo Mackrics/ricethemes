@@ -1,58 +1,3 @@
-#### Catppuccin ####
-catppuccin_old <- data.frame(
-	flamingo 	= "#F2CDCD",
-	mauve 		= "#DDB6F2",
-	pink 		  = "#F5C2E7",
-	maroon 	  = "#E8A2AF",
-	red 		  = "#F28FAD",
-	peach 		= "#F8BD96",
-	yellow		= "#FAE3B0",
-	green 		= "#ABE9B3",
-	teal 		  = "#B5E8E0",
-	blue 		  = "#96CDFB",
-	sky 		  = "#89DCEB",
-	black0 	  = "#161320",
-	black1		= "#1A1826",
-	black2 	  = "#1E1E2E",
-	black3 	  = "#302D41",
-	black4		= "#575268",
-	gray0 		= "#6E6C7E",
-	gray1 		= "#988BA2",
-	gray2 		= "#C3BAC6",
-	white 		= "#D9E0EE",
-	lavender	= "#C9CBFF",
-	rosewater	= "#F5E0DC"
-)
-
-catppuccin_mocha <- data.frame(
-	Rosewater =	"#f5e0dc",
-	Flamingo  = "#f2cdcd",
-	Pink      = "#f5c2e7",
-	Mauve     =	"#cba6f7",
-	Red       =	"#f38ba8",
-	Maroon    = "#eba0ac",
-	Peach     =	"#fab387",
-	Yellow    = "#f9e2af",
-	Green     =	"#a6e3a1",
-	Teal      =	"#94e2d5",
-	Sky       =	"#89dceb",
-	Sapphire  = "#74c7ec",
-	Blue      = "#89b4fa",
-	Lavender  = "#b4befe",
-	Text      = "#cdd6f4",
-	Subtext1  = "#bac2de",
-	Subtext0  = "#a6adc8",
-	Overlay2  = "#9399b2",
-	Overlay1  = "#7f849c",
-	Overlay0  = "#6c7086",
-	Surface2  = "#585b70",
-	Surface1  = "#45475a",
-	Surface0  = "#313244",
-	Base      = "#1e1e2e",
-	Mantle    = "#181825",
-	Crust     =	"#11111b"
-	)
-
 catppuccin_macchiato <- data.frame(
 	Rosewater =	"#f4dbd6",
 	Flamingo  =	"#f0c6c6",
@@ -162,31 +107,6 @@ nord <- data.frame(
 				   nord14 = "#a3be8c",
 				   nord15 = "#b48ead"
 					)
-
-#### Catppuccin Themes ####
-catppuccin_old_theme <- function(){
-	theme <- theme(
-				panel.background = element_rect(fill = catppuccin_old$black2),
-				plot.background = element_rect(fill = catppuccin_old$black1),
-				axis.title = element_text(color = catppuccin_old$white),
-				axis.text.y = element_text(color = catppuccin_old$white),
-				axis.text.x = element_text(color = catppuccin_old$white),
-				panel.grid.minor = element_line(color = catppuccin_old$black0),
-				panel.grid.major = element_line(color = catppuccin_old$black0)
-	)
-}
-
-catppuccin_mocha_theme <- function(){
-	theme <- theme(
-				panel.background = element_rect(fill = catppuccin_mocha$Mantle),
-				plot.background = element_rect(fill = catppuccin_mocha$Mantle),
-				axis.title = element_text(color = catppuccin_mocha$Text),
-				axis.text.y = element_text(color = catppuccin_mocha$Text),
-				axis.text.x = element_text(color = catppuccin_mocha$Text),
-				panel.grid.minor = element_line(color = catppuccin_mocha$Mantle),
-				panel.grid.major = element_line(color = catppuccin_mocha$Mantle)
-	)
-}
 
 catppuccin_macchiato_theme <- function(){
 	theme <- theme(
