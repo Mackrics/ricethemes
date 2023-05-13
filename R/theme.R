@@ -58,36 +58,6 @@ catppuccin_frappe <- data.frame(
 	)
 
 
-catppuccin_latte <- data.frame(
-	Rosewater =	"#dc8a78",
-	Flamingo  = "#dd7878",
-	Pink      = "#ea76cb",
-	Mauve     = "#8839ef",
-	Red       = "#d20f39",
-	Maroon    = "#e64553",
-	Peach     = "#fe640b",
-	Yellow    = "#df8e1d",
-	Green     = "#40a02b",
-	Teal      = "#179299",
-	Sky       = "#04a5e5",
-	Sapphire  = "#209fb5",
-	Blue      = "#1e66f5",
-	Lavender  = "#7287fd",
-	Text      = "#4c4f69",
-	Subtext1  = "#5c5f77",
-	Subtext0  = "#6c6f85",
-	Overlay2  = "#7c7f93",
-	Overlay1  = "#8c8fa1",
-	Overlay0  = "#9ca0b0",
-	Surface2  = "#acb0be",
-	Surface1  = "#bcc0cc",
-	Surface0  = "#ccd0da",
-	Base      = "#eff1f5",
-	Mantle    = "#e6e9ef",
-	Crust     = "#dce0e8"
-	)
-
-
 #### Nord ####
 nord <- data.frame(
 				   nord0 = "#2e3440",
@@ -129,18 +99,6 @@ catppuccin_frappe_theme <- function(){
 				axis.text.x = element_text(color = catppuccin_frappe$Text),
 				panel.grid.minor = element_line(color = catppuccin_frappe$Mantle),
 				panel.grid.major = element_line(color = catppuccin_frappe$Mantle)
-	)
-}
-
-catppuccin_latte_theme <- function(){
-	theme <- theme(
-				panel.background = element_rect(fill = catppuccin_latte$Mantle),
-				plot.background = element_rect(fill = catppuccin_latte$Mantle),
-				axis.title = element_text(color = catppuccin_latte$Text),
-				axis.text.y = element_text(color = catppuccin_latte$Text),
-				axis.text.x = element_text(color = catppuccin_latte$Text),
-				panel.grid.minor = element_line(color = catppuccin_latte$Mantle),
-				panel.grid.major = element_line(color = catppuccin_latte$Mantle)
 	)
 }
 
