@@ -41,7 +41,10 @@ library(ggplot2)
 library(ricethemes)
 
 ggplot(cars) +
-  aes(dist, speed) +
+  aes(speed, dist) +
   geom_point(color = ctp_mocha$yellow) +
-  theme_ctp_mocha()
+  geom_smooth(color = ctp_mocha$blue, se = FALSE, method = "lm") +
+  theme_ctp_mocha() +
+  labs(x = "Speed", y = "Distance") +
+  ggtitle("Example correlation plot using tha Catppuccin Mocha theme")
 ```
