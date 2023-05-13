@@ -11,13 +11,14 @@ your plots look a little bit nicer, I can not guarantee a performance
 improvement.
 
 # TODO
-- [ ] refactor themes into separate files (and rename them)
+- [x] refactor themes into separate files (and rename them)
   + [x] `ctp_mocha`
   + [x] `ctp_latte`
-  + [ ] `ctp_macchiato`
-  + [ ] `ctp_frappe`
-  + [ ] `nord_dark`
-  + [ ] `nord_light`
+  + [x] `ctp_macchiato`
+  + [x] `ctp_frappe`
+  + [x] `nord_dark`
+  + [x] `nord_light`
+- [ ] Functionalize code more?
 
 # Installation
 
