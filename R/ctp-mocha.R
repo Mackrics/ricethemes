@@ -1,4 +1,4 @@
-ctp_mocha <- list(
+ctp_mocha <- c(
   rosewater = "#f5e0dc",
   flamingo  = "#f2cdcd",
   pink      = "#f5c2e7",
@@ -6,7 +6,7 @@ ctp_mocha <- list(
   red       = "#f38ba8",
   maroon    = "#eba0ac",
   peach     = "#fab387",
-  yellow    = "#f9e2af", 
+  yellow    = "#f9e2af",
   green     = "#a6e3a1",
   teal      = "#94e2d5",
   sky       = "#89dceb",
@@ -24,31 +24,12 @@ ctp_mocha <- list(
   surface0  = "#313244",
   base      = "#1e1e2e",
   mantle    = "#181825",
-  crust     =  "#11111b"
+  crust     = "#11111b"
 )
 
-theme_ctp_mocha <- function() {
-  theme(
-    panel.background  = element_rect(fill  = ctp_mocha$crust),
-    panel.grid.minor  = element_blank(),
-    panel.grid.major  = element_blank(),
-    plot.background   = element_rect(fill  = ctp_mocha$crust),
-    title	      = element_text(color = ctp_mocha$text),
-    axis.text.y       = element_text(color = ctp_mocha$text),
-    axis.text.x       = element_text(color = ctp_mocha$text),
-    strip.text 	      = element_text(color = ctp_mocha$text),
-    text              = element_text(color = ctp_mocha$text),
-    strip.background  = element_blank(),
-    legend.key 	      = element_blank(),
-    legend.background = element_blank()
-  )
-}
-
-
 scale_color_ctp_mocha <- function() {
-scale_color_manual(
-  values = c(
-    unlist(
+  scale_color_manual(values =
+    unname(
       ctp_mocha[c(
         "blue",
         "yellow",
@@ -64,15 +45,14 @@ scale_color_manual(
         "flamingo",
         "sky",
         "teal"
-      )], use.names = FALSE)
+      )]
     )
   )
 }
 
 scale_color_fill_mocha <- function() {
-scale_color_manual(
-  values = c(
-    unlist(
+  scale_color_manual(values =
+    unname(
       ctp_mocha[c(
         "blue",
         "yellow",
@@ -88,7 +68,7 @@ scale_color_manual(
         "flamingo",
         "sky",
         "teal"
-      )], use.names = FALSE)
+      )]
     )
   )
 }
