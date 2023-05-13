@@ -27,6 +27,23 @@ ctp_mocha <- c(
   crust     = "#11111b"
 )
 
+theme_ctp_mocha <- function() {
+  theme(
+    panel.background  = element_rect(fill  = ctp_mocha[["crust"]]),
+    panel.grid.minor  = element_blank(),
+    panel.grid.major  = element_blank(),
+    plot.background   = element_rect(fill  = ctp_mocha[["crust"]]),
+    title	      = element_text(color = ctp_mocha[["text"]]),
+    axis.text.y       = element_text(color = ctp_mocha[["text"]]),
+    axis.text.x       = element_text(color = ctp_mocha[["text"]]),
+    strip.text 	      = element_text(color = ctp_mocha[["text"]]),
+    text              = element_text(color = ctp_mocha[["text"]]),
+    strip.background  = element_blank(),
+    legend.key 	      = element_blank(),
+    legend.background = element_blank()
+  )
+}
+
 scale_color_ctp_mocha <- function() {
   scale_color_manual(values =
     unname(

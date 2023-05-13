@@ -50,6 +50,23 @@ scale_color_ctp_frappe <- function() {
   )
 }
 
+theme_ctp_frappe <- function() {
+  theme(
+    panel.background  = element_rect(fill  = ctp_frappe[["crust"]]),
+    panel.grid.minor  = element_blank(),
+    panel.grid.major  = element_blank(),
+    plot.background   = element_rect(fill  = ctp_frappe[["crust"]]),
+    title	      = element_text(color = ctp_frappe[["text"]]),
+    axis.text.y       = element_text(color = ctp_frappe[["text"]]),
+    axis.text.x       = element_text(color = ctp_frappe[["text"]]),
+    strip.text 	      = element_text(color = ctp_frappe[["text"]]),
+    text              = element_text(color = ctp_frappe[["text"]]),
+    strip.background  = element_blank(),
+    legend.key 	      = element_blank(),
+    legend.background = element_blank()
+  )
+}
+
 scale_color_fill_frappe <- function() {
   scale_color_manual(values =
     unname(

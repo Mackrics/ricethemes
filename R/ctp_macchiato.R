@@ -50,6 +50,23 @@ scale_color_ctp_macchiato <- function() {
   )
 }
 
+theme_ctp_macchiato <- function() {
+  theme(
+    panel.background  = element_rect(fill  = ctp_macchiato[["crust"]]),
+    panel.grid.minor  = element_blank(),
+    panel.grid.major  = element_blank(),
+    plot.background   = element_rect(fill  = ctp_macchiato[["crust"]]),
+    title	      = element_text(color = ctp_macchiato[["text"]]),
+    axis.text.y       = element_text(color = ctp_macchiato[["text"]]),
+    axis.text.x       = element_text(color = ctp_macchiato[["text"]]),
+    strip.text 	      = element_text(color = ctp_macchiato[["text"]]),
+    text              = element_text(color = ctp_macchiato[["text"]]),
+    strip.background  = element_blank(),
+    legend.key 	      = element_blank(),
+    legend.background = element_blank()
+  )
+}
+
 scale_color_fill_macchiato <- function() {
   scale_color_manual(values =
     unname(
