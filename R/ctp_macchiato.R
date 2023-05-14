@@ -28,7 +28,7 @@ ctp_macchiato <- c(
 )
 
 scale_color_ctp_macchiato <- function() {
-  scale_color_manual(values =
+ggplot2::scale_color_manual(values =
     unname(
       ctp_macchiato[c(
         "blue",
@@ -51,24 +51,24 @@ scale_color_ctp_macchiato <- function() {
 }
 
 theme_ctp_macchiato <- function() {
-  theme(
-    panel.background  = element_rect(fill  = ctp_macchiato[["crust"]]),
-    panel.grid.minor  = element_blank(),
-    panel.grid.major  = element_blank(),
-    plot.background   = element_rect(fill  = ctp_macchiato[["crust"]]),
-    title	      = element_text(color = ctp_macchiato[["text"]]),
-    axis.text.y       = element_text(color = ctp_macchiato[["text"]]),
-    axis.text.x       = element_text(color = ctp_macchiato[["text"]]),
-    strip.text 	      = element_text(color = ctp_macchiato[["text"]]),
-    text              = element_text(color = ctp_macchiato[["text"]]),
-    strip.background  = element_blank(),
-    legend.key 	      = element_blank(),
-    legend.background = element_blank()
+ggplot2::theme(
+    panel.background  = ggplot2::element_rect(fill  = ctp_macchiato[["crust"]]),
+    panel.grid.minor  = ggplot2::element_blank(),
+    panel.grid.major  = ggplot2::element_blank(),
+    plot.background   = ggplot2::element_rect(fill  = ctp_macchiato[["crust"]]),
+    title	      = ggplot2::element_text(color = ctp_macchiato[["text"]]),
+    axis.text.y       = ggplot2::element_text(color = ctp_macchiato[["text"]]),
+    axis.text.x       = ggplot2::element_text(color = ctp_macchiato[["text"]]),
+    strip.text 	      = ggplot2::element_text(color = ctp_macchiato[["text"]]),
+    text              = ggplot2::element_text(color = ctp_macchiato[["text"]]),
+    strip.background  = ggplot2::element_blank(),
+    legend.key 	      = ggplot2::element_blank(),
+    legend.background = ggplot2::element_blank()
   )
 }
 
-scale_color_fill_macchiato <- function() {
-  scale_color_manual(values =
+scale_fill_macchiato <- function() {
+  ggplot2::scale_fill_manual(values =
     unname(
       ctp_macchiato[c(
         "blue",

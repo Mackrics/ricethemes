@@ -28,24 +28,24 @@ ctp_latte <- c(
 )
 
 theme_ctp_latte <- function() {
-  theme(
-    panel.background  = element_rect(fill  = ctp_latte[["crust"]]),
-    panel.grid.minor  = element_blank(),
-    panel.grid.major  = element_blank(),
-    plot.background   = element_rect(fill  = ctp_latte[["crust"]]),
-    title	      = element_text(color = ctp_latte[["text"]]),
-    axis.text.y       = element_text(color = ctp_latte[["text"]]),
-    axis.text.x       = element_text(color = ctp_latte[["text"]]),
-    strip.text 	      = element_text(color = ctp_latte[["text"]]),
-    text              = element_text(color = ctp_latte[["text"]]),
-    strip.background  = element_blank(),
-    legend.key 	      = element_blank(),
-    legend.background = element_blank()
+  ggplot2::theme(
+    panel.background  = ggplot2::element_rect(fill  = ctp_latte[["crust"]]),
+    panel.grid.minor  = ggplot2::element_blank(),
+    panel.grid.major  = ggplot2::element_blank(),
+    plot.background   = ggplot2::element_rect(fill  = ctp_latte[["crust"]]),
+    title	      = ggplot2::element_text(color = ctp_latte[["text"]]),
+    axis.text.y       = ggplot2::element_text(color = ctp_latte[["text"]]),
+    axis.text.x       = ggplot2::element_text(color = ctp_latte[["text"]]),
+    strip.text 	      = ggplot2::element_text(color = ctp_latte[["text"]]),
+    text              = ggplot2::element_text(color = ctp_latte[["text"]]),
+    strip.background  = ggplot2::element_blank(),
+    legend.key 	      = ggplot2::element_blank(),
+    legend.background = ggplot2::element_blank()
   )
 }
 
 scale_color_ctp_latte <- function() {
-  scale_color_manual(values =
+  ggplot2::scale_color_manual(values =
     unname(
       ctp_latte[c(
         "blue",
@@ -67,8 +67,8 @@ scale_color_ctp_latte <- function() {
   )
 }
 
-scale_color_fill_latte <- function() {
-  scale_color_manual(values =
+scale_fill_latte <- function() {
+  ggplot2::scale_fill_manual(values =
     unname(
       ctp_latte[c(
         "blue",
