@@ -1,9 +1,10 @@
 Package: ricethemes 
 Type: Package
-Title: Rice Theme
-Version: 0.1.0
-Author: Mackan
+Title: Use Popular Ricing Themes for ggplot!
+Version: 0.2.0
+Authors@R: person("Markus", "Ljungqvist", email = "Mackrics@pm.me",
+  role = c("aut", "cre"))
 Description: Implementation of the Nord and Catppuccin themes for ggplot
-License: use_mit_license()
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
