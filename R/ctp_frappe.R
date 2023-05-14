@@ -1,3 +1,4 @@
+#' @title Catpuccin frappe theme
 ctp_frappe <- c(
   rosewater = "#f2d5cf",
   flamingo  = "#eebebe",
