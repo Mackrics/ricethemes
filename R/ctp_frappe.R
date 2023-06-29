@@ -1,4 +1,4 @@
-#' @title Catpuccin frappe theme
+#' @export ctp_frappe
 ctp_frappe <- c(
   rosewater = "#f2d5cf",
   flamingo  = "#eebebe",
@@ -28,7 +28,7 @@ ctp_frappe <- c(
   crust     = "#232634"
 )
 
-
+#' @export theme_ctp_frappe
 theme_ctp_frappe <- function() {
 	ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_frappe[["crust"]]),
@@ -46,6 +46,7 @@ theme_ctp_frappe <- function() {
   )
 }
 
+#' @export scale_color_ctp_frappe
 scale_color_ctp_frappe <- function() {
   ggplot2::scale_color_manual(values =
     unname(
@@ -69,6 +70,7 @@ scale_color_ctp_frappe <- function() {
   )
 }
 
+#' @export scale_fill_frappe
 scale_fill_frappe <- function() {
   ggplot2::scale_fill_manual(values =
     unname(

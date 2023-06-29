@@ -1,3 +1,4 @@
+#' @export ctp_macchiato
 ctp_macchiato <- c(
   rosewater = "#f4dbd6",
   flamingo  = "#f0c6c6",
@@ -27,6 +28,7 @@ ctp_macchiato <- c(
   crust     = "#181926"
 )
 
+#' @export scale_color_ctp_macchiato
 scale_color_ctp_macchiato <- function() {
 ggplot2::scale_color_manual(values =
     unname(
@@ -50,6 +52,7 @@ ggplot2::scale_color_manual(values =
   )
 }
 
+#' @export theme_ctp_macchiato
 theme_ctp_macchiato <- function() {
 ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_macchiato[["crust"]]),
@@ -67,6 +70,7 @@ ggplot2::theme(
   )
 }
 
+#' @export scale_fill_macchiato
 scale_fill_macchiato <- function() {
   ggplot2::scale_fill_manual(values =
     unname(

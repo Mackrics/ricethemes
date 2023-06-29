@@ -1,3 +1,4 @@
+#' @export ctp_latte
 ctp_latte <- c(
   rosewater = "#dc8a78",
   flamingo  = "#dd7878",
@@ -27,6 +28,7 @@ ctp_latte <- c(
   crust     = "#dce0e8"
 )
 
+#' @export theme_ctp_latte
 theme_ctp_latte <- function() {
   ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_latte[["crust"]]),
@@ -44,6 +46,7 @@ theme_ctp_latte <- function() {
   )
 }
 
+#' @export scale_color_latte
 scale_color_ctp_latte <- function() {
   ggplot2::scale_color_manual(values =
     unname(
@@ -67,6 +70,7 @@ scale_color_ctp_latte <- function() {
   )
 }
 
+#' @export scale_fill_latte
 scale_fill_latte <- function() {
   ggplot2::scale_fill_manual(values =
     unname(

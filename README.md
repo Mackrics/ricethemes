@@ -11,14 +11,9 @@ your plots look a little bit nicer, I can not guarantee a performance
 improvement.
 
 # TODO
-- [x] refactor themes into separate files (and rename them)
-  + [x] `ctp_mocha`
-  + [x] `ctp_latte`
-  + [x] `ctp_macchiato`
-  + [x] `ctp_frappe`
-  + [x] `nord_dark`
-  + [x] `nord_light`
-- [ ] Functionalize code more?
+- [ ] add documentation to all functions in package
+- [ ] add images in readme showcasing themes
+- [ ] build pkgdown website
 
 # Installation
 

@@ -1,3 +1,4 @@
+#' @export ctp_mocha
 ctp_mocha <- c(
   rosewater = "#f5e0dc",
   flamingo  = "#f2cdcd",
@@ -27,6 +28,7 @@ ctp_mocha <- c(
   crust     = "#11111b"
 )
 
+#' @export theme_ctp_mocha
 theme_ctp_mocha <- function() {
   ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_mocha[["crust"]]),
@@ -44,6 +46,7 @@ theme_ctp_mocha <- function() {
   )
 }
 
+#' @export scale_color_ctp_mocha
 scale_color_ctp_mocha <- function() {
 ggplot2::scale_color_manual(values =
     unname(
@@ -67,6 +70,7 @@ ggplot2::scale_color_manual(values =
   )
 }
 
+#' @export scale_fill_mocha
 scale_fill_mocha <- function() {
   ggplot2::scale_fill_manual(values =
     unname(
