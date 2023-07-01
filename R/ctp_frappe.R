@@ -45,7 +45,7 @@ theme_ctp_frappe <- function() {
     legend.background = ggplot2::element_blank(),
     axis.ticks.x = ggplot2::element_blank(),
     axis.ticks.y = ggplot2::element_blank()
-  )
+ )
 }
 
 #' @export scale_color_ctp_frappe
