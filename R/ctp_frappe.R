@@ -42,7 +42,9 @@ theme_ctp_frappe <- function() {
     text              = ggplot2::element_text(color = ctp_frappe[["text"]]),
     strip.background  = ggplot2::element_blank(),
     legend.key 	      = ggplot2::element_blank(),
-    legend.background = ggplot2::element_blank()
+    legend.background = ggplot2::element_blank(),
+    axis.ticks.x = ggplot2::element_blank(),
+    axis.ticks.y = ggplot2::element_blank()
   )
 }
 
