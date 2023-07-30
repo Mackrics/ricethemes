@@ -49,6 +49,8 @@ Where `ctp_theme` is  any of the four palettes:
 
 # Example usage:
 
+## Application
+
 ```R
 library(ggplot2)
 library(ricethemes)
@@ -63,3 +65,21 @@ ggplot(cars) +
 ```
 
 ![Example 1](example1.svg)
+
+
+## Show all themes
+
+```R
+library(ggplot2)
+library(ricethemes)
+library(patchwork)
+
+list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
+  lapply(show_ctp_theme) |>
+  wrap_plots() +
+  plot_annotation(tag_levels = list(c(
+    "ctp_mocha", "ctp_machiato", "ctp_frappe", "ctp_latte"
+    )))
+```
+
+![Example 2](example2.svg)
