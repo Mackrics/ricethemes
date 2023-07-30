@@ -62,4 +62,4 @@ ggplot(cars) +
   ggtitle("Example correlation plot using tha Catppuccin Mocha theme")
 ```
 
-![Example 1](example1.png)
+![Example 1](example1.svg)
