@@ -1,3 +1,4 @@
+#' Catppuccin frappe colors
 #' @export ctp_frappe
 ctp_frappe <- c(
   rosewater = "#f2d5cf",
@@ -27,71 +28,3 @@ ctp_frappe <- c(
   mantle    = "#292c3c",
   crust     = "#232634"
 )
-
-#' @export theme_ctp_frappe
-theme_ctp_frappe <- function() {
-	ggplot2::theme(
-    panel.background  = ggplot2::element_rect(fill  = ctp_frappe[["crust"]]),
-    panel.grid.minor  = ggplot2::element_blank(),
-    panel.grid.major  = ggplot2::element_blank(),
-    plot.background   = ggplot2::element_rect(fill  = ctp_frappe[["crust"]]),
-    title	      = ggplot2::element_text(color = ctp_frappe[["text"]]),
-    axis.text.y       = ggplot2::element_text(color = ctp_frappe[["text"]]),
-    axis.text.x       = ggplot2::element_text(color = ctp_frappe[["text"]]),
-    strip.text 	      = ggplot2::element_text(color = ctp_frappe[["text"]]),
-    text              = ggplot2::element_text(color = ctp_frappe[["text"]]),
-    strip.background  = ggplot2::element_blank(),
-    legend.key 	      = ggplot2::element_blank(),
-    legend.background = ggplot2::element_blank(),
-    axis.ticks.x = ggplot2::element_blank(),
-    axis.ticks.y = ggplot2::element_blank()
- )
-}
-
-#' @export scale_color_ctp_frappe
-scale_color_ctp_frappe <- function() {
-  ggplot2::scale_color_manual(values =
-    unname(
-      ctp_frappe[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}
-
-#' @export scale_fill_frappe
-scale_fill_frappe <- function() {
-  ggplot2::scale_fill_manual(values =
-    unname(
-      ctp_frappe[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}

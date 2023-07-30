@@ -1,4 +1,6 @@
-#' @export theme_ctp_general
+#' Catppuccin ggplot2 theme
+#' @export theme_ctp
+#' @param ctp_theme a catppuccin ctp theme
 theme_ctp <- function(ctp_theme) {
   ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_theme[["crust"]]),
@@ -15,53 +17,5 @@ theme_ctp <- function(ctp_theme) {
     legend.background = ggplot2::element_blank(),
     axis.ticks.x = ggplot2::element_blank(),
     axis.ticks.y = ggplot2::element_blank()
-  )
-}
-
-#' @export scale_color_ctp_mocha
-scale_color_ctp <- function(ctp_theme) {
-ggplot2::scale_color_manual(values =
-    unname(
-      ctp_theme[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}
-
-#' @export scale_fill_mocha
-scale_fill_ctp <- function(ctp_theme) {
-  ggplot2::scale_fill_manual(values =
-    unname(
-      ctp_theme[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
   )
 }

@@ -1,6 +1,6 @@
 # ricethemes
 
-**NOTE:** *This theme is still very much a work in progress.*
+**NOTE:** *This theme is still very much a work in progress. Expect breaking changes*
 
 The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in car tuning communities. Basically, it is a cosmetic upgrade, which have no implications on performance. It is also a term widely used in desktop
 customization. This ggplot theme is inspired by the desktop customization

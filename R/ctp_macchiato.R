@@ -1,3 +1,4 @@
+#' Catppuccin macchiato colors
 #' @export ctp_macchiato
 ctp_macchiato <- c(
   rosewater = "#f4dbd6",
@@ -27,71 +28,3 @@ ctp_macchiato <- c(
   mantle    = "#1e2030",
   crust     = "#181926"
 )
-
-#' @export scale_color_ctp_macchiato
-scale_color_ctp_macchiato <- function() {
-ggplot2::scale_color_manual(values =
-    unname(
-      ctp_macchiato[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}
-
-#' @export theme_ctp_macchiato
-theme_ctp_macchiato <- function() {
-ggplot2::theme(
-    panel.background  = ggplot2::element_rect(fill  = ctp_macchiato[["crust"]]),
-    panel.grid.minor  = ggplot2::element_blank(),
-    panel.grid.major  = ggplot2::element_blank(),
-    plot.background   = ggplot2::element_rect(fill  = ctp_macchiato[["crust"]]),
-    title	      = ggplot2::element_text(color = ctp_macchiato[["text"]]),
-    axis.text.y       = ggplot2::element_text(color = ctp_macchiato[["text"]]),
-    axis.text.x       = ggplot2::element_text(color = ctp_macchiato[["text"]]),
-    strip.text 	      = ggplot2::element_text(color = ctp_macchiato[["text"]]),
-    text              = ggplot2::element_text(color = ctp_macchiato[["text"]]),
-    strip.background  = ggplot2::element_blank(),
-    legend.key 	      = ggplot2::element_blank(),
-    legend.background = ggplot2::element_blank(),
-    axis.ticks.x = ggplot2::element_blank(),
-    axis.ticks.y = ggplot2::element_blank()
-  )
-}
-
-#' @export scale_fill_macchiato
-scale_fill_macchiato <- function() {
-  ggplot2::scale_fill_manual(values =
-    unname(
-      ctp_macchiato[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}

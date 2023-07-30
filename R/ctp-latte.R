@@ -1,3 +1,4 @@
+#' Catppuccin latte colors
 #' @export ctp_latte
 ctp_latte <- c(
   rosewater = "#dc8a78",
@@ -27,71 +28,3 @@ ctp_latte <- c(
   mantle    = "#e6e9ef",
   crust     = "#dce0e8"
 )
-
-#' @export theme_ctp_latte
-theme_ctp_latte <- function() {
-  ggplot2::theme(
-    panel.background  = ggplot2::element_rect(fill  = ctp_latte[["crust"]]),
-    panel.grid.minor  = ggplot2::element_blank(),
-    panel.grid.major  = ggplot2::element_blank(),
-    plot.background   = ggplot2::element_rect(fill  = ctp_latte[["crust"]]),
-    title	      = ggplot2::element_text(color = ctp_latte[["text"]]),
-    axis.text.y       = ggplot2::element_text(color = ctp_latte[["text"]]),
-    axis.text.x       = ggplot2::element_text(color = ctp_latte[["text"]]),
-    strip.text 	      = ggplot2::element_text(color = ctp_latte[["text"]]),
-    text              = ggplot2::element_text(color = ctp_latte[["text"]]),
-    strip.background  = ggplot2::element_blank(),
-    legend.key 	      = ggplot2::element_blank(),
-    legend.background = ggplot2::element_blank(),
-    axis.ticks.x = ggplot2::element_blank(),
-    axis.ticks.y = ggplot2::element_blank()
-  )
-}
-
-#' @export scale_color_ctp_latte
-scale_color_ctp_latte <- function() {
-  ggplot2::scale_color_manual(values =
-    unname(
-      ctp_latte[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}
-
-#' @export scale_fill_ctp_latte
-scale_fill_ctp_latte <- function() {
-  ggplot2::scale_fill_manual(values =
-    unname(
-      ctp_latte[c(
-        "blue",
-        "yellow",
-        "red",
-        "mauve",
-        "sapphire",
-        "maroon",
-        "peach",
-        "pink",
-        "lavender",
-        "rosewater",
-        "green",
-        "flamingo",
-        "sky",
-        "teal"
-      )]
-    )
-  )
-}
