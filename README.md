@@ -79,7 +79,7 @@ list(ctp_mocha, ctp_macchiato, ctp_frappe, ctp_latte) |>
   wrap_plots() +
   plot_annotation(tag_levels = list(c(
     "ctp_mocha", "ctp_machiato", "ctp_frappe", "ctp_latte"
-    )))
+  )))
 ```
 
 ![Example 2](example2.svg)
