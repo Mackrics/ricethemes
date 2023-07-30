@@ -2,16 +2,17 @@
 
 **NOTE:** *This theme is still very much a work in progress. Expect breaking changes*
 
-The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in car tuning communities. Basically, it is a cosmetic upgrade, which have no implications on performance. It is also a term widely used in desktop
+The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and was used in
+car tuning communities. Basically, it is a cosmetic upgrade, which have no
+implications on performance. It is also a term widely used in desktop
 customization. This ggplot theme is inspired by the desktop customization
-enthusiasts and implements two popular themes from the desktop ricing
-community: [Nord](https://www.nordtheme.com/) and
-[Catppuccin](https://github.com/catppuccin/catppuccin). Although they will make
-your plots look a little bit nicer, I can not guarantee a performance
-improvement.
+enthusiasts and implements a popular theme,
+[Catppuccin](https://github.com/catppuccin/catppuccin), and possibly more to
+rice your ggplots. Although they will make your plots look a little bit nicer,
+I can not guarantee a performance improvement.
 
 # TODO
-- [ ] add documentation to all functions in package
+- [x] add documentation to all functions in package
 - [ ] add images in readme showcasing themes
 - [ ] build pkgdown website
 
@@ -20,13 +21,31 @@ improvement.
 You can install this package using the [pak package](https://pak.r-lib.org/):
 
 ```R
-if (!require("pak")) install.packages("pak"); library(pak) # install pak if needed and load it
-pkg_install("mackrics/ricethemes") # Install theme
+pak::pkg_install("mackrics/ricethemes")
 ```
 
 # Usage 
 
-This is a placeholder which will describe the themes (themes, scales, palettes)
+The package contains the four Catppuccin palettes:
+
+
+You can use these to fetch the hex codes for each of the palettes, for example
+`ctp_mocha` returns the entire palette, while `ctp_mocha[["yellow"]]` returns the hex code for the color yellow.
+
+To apply these palettes to ggplot there are four functions
+
+
+- `show_ctp_theme(ctp_theme)`
+- `scale_fill_ctp(ctp_theme)`
+- `scale_color_ctp(ctp_theme)`
+- `theme_ctp(ctp_theme)`
+
+Where `ctp_theme` is  any of the four palettes:
+
+- `ctp_mocha`
+- `ctp_machiato`
+- `ctp_frappe`
+- `ctp_frappe`
 
 # Example usage:
 
@@ -38,7 +57,9 @@ ggplot(cars) +
   aes(speed, dist) +
   geom_point(color = ctp_mocha[["yellow"]]) +
   geom_smooth(color = ctp_mocha[["blue"]], se = FALSE, method = "lm") +
-  theme_ctp_mocha() +
+  theme_ctp(ctp_mocha) +
   labs(x = "Speed", y = "Distance") +
   ggtitle("Example correlation plot using tha Catppuccin Mocha theme")
 ```
+
+![Example 1](example1.png)
