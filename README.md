@@ -11,11 +11,6 @@ enthusiasts and implements a popular theme,
 rice your ggplots. Although they will make your plots look a little bit nicer,
 I can not guarantee a performance improvement.
 
-# TODO
-- [x] add documentation to all functions in package
-- [ ] add images in readme showcasing themes
-- [ ] build pkgdown website
-
 # Installation
 
 You can install this package using the [pak package](https://pak.r-lib.org/):
