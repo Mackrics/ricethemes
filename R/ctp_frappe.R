@@ -3,7 +3,7 @@
 ctp_frappe <- c(
   rosewater = "#f2d5cf",
   flamingo  = "#eebebe",
-  ink       = "#f4b8e4",
+  pink      = "#f4b8e4",
   mauve     = "#ca9ee6",
   red       = "#e78284",
   maroon    = "#ea999c",
