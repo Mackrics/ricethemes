@@ -6,7 +6,10 @@ theme_ctp <- function(ctp_theme) {
     panel.background  = ggplot2::element_rect(fill  = ctp_theme[["crust"]]),
     panel.grid.minor  = ggplot2::element_blank(),
     panel.grid.major  = ggplot2::element_blank(),
-    plot.background   = ggplot2::element_rect(fill  = ctp_theme[["crust"]]),
+    plot.background   = ggplot2::element_rect(
+			  fill  = ctp_theme[["crust"]],
+			  color = ctp_theme[["crust"]]
+			),
     title	      = ggplot2::element_text(color = ctp_theme[["text"]]),
     axis.text.y       = ggplot2::element_text(color = ctp_theme[["text"]]),
     axis.text.x       = ggplot2::element_text(color = ctp_theme[["text"]]),
