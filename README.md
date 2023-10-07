@@ -34,6 +34,7 @@ To apply these palettes to ggplot there are four functions
 - `scale_fill_ctp(ctp_theme)`
 - `scale_color_ctp(ctp_theme)`
 - `theme_ctp(ctp_theme)`
+- `theme_ctp_grid(ctp_theme)`
 
 Where `ctp_theme` is  any of the four palettes:
 
