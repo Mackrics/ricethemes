@@ -11,4 +11,5 @@ LazyData: true
 RoxygenNote: 7.2.3
 Imports: 
     forcats,
-    ggplot2
+    ggplot2,
+    gt

@@ -1,13 +1,9 @@
-#' Catppuccin ggplot2 theme - with grids
+#' catpuccin gt theme
 #' @export gt_theme_ctp
 #' @param ctp_theme a catppuccin ctp theme
-#' @param gt a gt object
-#' @usage
-#' cars |>
-#'   head(10) |>
-#'   gt_theme_ctp()
-gt_theme_ctp <- function(gt, ctp_theme) {
-  gt |>
+#' @param gt_table a gt object
+gt_theme_ctp <- function(gt_table, ctp_theme) {
+  gt_table |>
   gt::tab_options(
     table.font.size                   = gt::px(18),
     column_labels.font.size           = gt::px(18),
@@ -37,5 +33,5 @@ gt_theme_ctp <- function(gt, ctp_theme) {
     ),
     locations = gt::cells_body()
   ) |> 
-  opt_row_striping()
+  gt::opt_row_striping()
 }
