@@ -2,6 +2,7 @@
 #' @export theme_ctp_grid
 #' @param ctp_theme a catppuccin ctp theme
 theme_ctp_grid <- function(ctp_theme) {
+  ggplot2::theme_gray() +
   ggplot2::theme(
     panel.background  = ggplot2::element_rect(fill  = ctp_theme[["crust"]]),
     panel.grid.minor  = ggplot2::element_line(
