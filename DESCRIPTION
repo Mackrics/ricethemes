@@ -8,8 +8,9 @@ Description: The term R.I.C.E stands for Race Inspired Cosmetic Enhancements and
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Imports: 
     forcats,
-    ggplot2,
+    ggplot2
+Suggests:
     gt
